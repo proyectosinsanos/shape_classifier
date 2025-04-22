@@ -17,7 +17,7 @@ while True:
     prediction = model.predict(input_img)
     label = labels[np.argmax(prediction)]
 
-    cv2.putText(frame, f"Predicción: {label}", (10, 30),
+    cv2.putText(frame, f"Prediccion: {label}", (10, 30),
                 cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 0, 0), 2)
     cv2.imshow("Clasificador de Forma", frame)
 
